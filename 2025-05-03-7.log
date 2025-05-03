@@ -1,0 +1,70 @@
+[08:46:42] [ServerMain/WARN]: You specified a resource pack without providing a sha1 hash. Pack will be updated on the client only if you change the name of the pack.
+[08:46:42] [ServerMain/WARN]: resource-pack-id missing, using default of 35ef8b73-6cd7-30dc-92b1-50f6b114d131
+[08:46:42] [ServerMain/INFO]: Environment: Environment[sessionHost=https://sessionserver.mojang.com, servicesHost=https://api.minecraftservices.com, name=PROD]
+[08:46:42] [ServerMain/WARN]: Missing data pack fabric
+[08:46:42] [ServerMain/WARN]: Missing data pack balm
+[08:46:42] [ServerMain/WARN]: Missing data pack brendons_bottlecaps
+[08:46:42] [ServerMain/WARN]: Missing data pack cobblemon
+[08:46:42] [ServerMain/WARN]: Missing data pack cobblemon_counter
+[08:46:42] [ServerMain/WARN]: Missing data pack cobblemonboxlink
+[08:46:42] [ServerMain/WARN]: Missing data pack cobblenav
+[08:46:42] [ServerMain/WARN]: Missing data pack cobblepedia
+[08:46:42] [ServerMain/WARN]: Missing data pack cobbleride
+[08:46:42] [ServerMain/WARN]: Missing data pack collective
+[08:46:42] [ServerMain/WARN]: Missing data pack constructionwand
+[08:46:42] [ServerMain/WARN]: Missing data pack customizableelytra
+[08:46:42] [ServerMain/WARN]: Missing data pack easyanvils
+[08:46:42] [ServerMain/WARN]: Missing data pack easymagic
+[08:46:42] [ServerMain/WARN]: Missing data pack easyshulkerboxes
+[08:46:42] [ServerMain/WARN]: Missing data pack emojiful
+[08:46:42] [ServerMain/WARN]: Missing data pack explorerscompass
+[08:46:42] [ServerMain/WARN]: Missing data pack fabric-convention-tags-v2
+[08:46:42] [ServerMain/WARN]: Missing data pack fightorflight
+[08:46:42] [ServerMain/WARN]: Missing data pack friendsandfoes
+[08:46:42] [ServerMain/WARN]: Missing data pack mega_showdown
+[08:46:42] [ServerMain/WARN]: Missing data pack mr_cobblemon_legendarystructures
+[08:46:42] [ServerMain/WARN]: Missing data pack naturescompass
+[08:46:42] [ServerMain/WARN]: Missing data pack patchouli
+[08:46:42] [ServerMain/WARN]: Missing data pack rctmod
+[08:46:42] [ServerMain/WARN]: Missing data pack show-held-items
+[08:46:42] [ServerMain/WARN]: Missing data pack simpletms
+[08:46:42] [ServerMain/WARN]: Missing data pack terralith
+[08:46:42] [ServerMain/WARN]: Missing data pack trinkets
+[08:46:42] [ServerMain/WARN]: Missing data pack usefulbackpacks
+[08:46:42] [ServerMain/WARN]: Missing data pack waystones
+[08:46:42] [ServerMain/WARN]: Missing data pack file/AllTheMons Release 2.2.zip
+[08:46:42] [ServerMain/INFO]: Found new data pack file/AllTheMons Release 2.3.zip, loading it automatically
+[08:46:42] [ServerMain/INFO]: Found new data pack file/Legendary 1.2.zip, loading it automatically
+[08:46:42] [ServerMain/INFO]: Found new data pack file/Shiny_Charm_Recipe_DD.zip, loading it automatically
+[08:46:43] [ServerMain/WARN]: Failed to load datapacks, can't proceed with server load. You can either fix your datapacks or reset to vanilla with --safeMode
+java.util.concurrent.ExecutionException: java.lang.IllegalStateException: Overworld settings missing
+	at java.base/java.util.concurrent.CompletableFuture.reportGet(CompletableFuture.java:396) ~[?:?]
+	at java.base/java.util.concurrent.CompletableFuture.get(CompletableFuture.java:2073) ~[?:?]
+	at net.minecraft.server.Main.main(SourceFile:229) ~[server-1.21.1.jar:?]
+	at net.minecraft.bundler.Main.lambda$run$0(Main.java:54) ~[?:?]
+	at java.base/java.lang.Thread.run(Thread.java:1583) [?:?]
+Caused by: java.lang.IllegalStateException: Overworld settings missing
+	at dzt.<init>(SourceFile:56) ~[server-1.21.1.jar:?]
+	at com.mojang.serialization.codecs.RecordCodecBuilder$Instance$1.lambda$decode$0(RecordCodecBuilder.java:185) ~[datafixerupper-8.0.16.jar:?]
+	at com.mojang.serialization.DataResult$Success.map(DataResult.java:175) ~[datafixerupper-8.0.16.jar:?]
+	at com.mojang.serialization.codecs.RecordCodecBuilder$Instance$1.lambda$decode$1(RecordCodecBuilder.java:184) ~[datafixerupper-8.0.16.jar:?]
+	at com.mojang.serialization.DataResult$Error.flatMap(DataResult.java:335) ~[datafixerupper-8.0.16.jar:?]
+	at com.mojang.serialization.DataResult$Error.flatMap(DataResult.java:250) ~[datafixerupper-8.0.16.jar:?]
+	at com.mojang.serialization.codecs.RecordCodecBuilder$Instance$1.decode(RecordCodecBuilder.java:183) ~[datafixerupper-8.0.16.jar:?]
+	at com.mojang.serialization.codecs.RecordCodecBuilder$2.decode(RecordCodecBuilder.java:107) ~[datafixerupper-8.0.16.jar:?]
+	at com.mojang.serialization.codecs.RecordCodecBuilder$Instance$3.decode(RecordCodecBuilder.java:249) ~[datafixerupper-8.0.16.jar:?]
+	at com.mojang.serialization.codecs.RecordCodecBuilder$2.decode(RecordCodecBuilder.java:107) ~[datafixerupper-8.0.16.jar:?]
+	at com.mojang.serialization.MapDecoder.lambda$compressedDecode$1(MapDecoder.java:52) ~[datafixerupper-8.0.16.jar:?]
+	at com.mojang.serialization.DataResult$Success.flatMap(DataResult.java:201) ~[datafixerupper-8.0.16.jar:?]
+	at com.mojang.serialization.MapDecoder.compressedDecode(MapDecoder.java:52) ~[datafixerupper-8.0.16.jar:?]
+	at com.mojang.serialization.MapCodec$MapCodecCodec.decode(MapCodec.java:158) ~[datafixerupper-8.0.16.jar:?]
+	at com.mojang.serialization.Decoder.decode(Decoder.java:22) ~[datafixerupper-8.0.16.jar:?]
+	at com.mojang.serialization.Decoder.parse(Decoder.java:26) ~[datafixerupper-8.0.16.jar:?]
+	at erf.a(SourceFile:135) ~[server-1.21.1.jar:?]
+	at net.minecraft.server.Main.a(SourceFile:189) ~[server-1.21.1.jar:?]
+	at alo.a(SourceFile:40) ~[server-1.21.1.jar:?]
+	at net.minecraft.server.Main.a(SourceFile:184) ~[server-1.21.1.jar:?]
+	at ad.a(SourceFile:1018) ~[server-1.21.1.jar:?]
+	at ad.c(SourceFile:1012) ~[server-1.21.1.jar:?]
+	at net.minecraft.server.Main.main(SourceFile:182) ~[server-1.21.1.jar:?]
+	... 2 more
